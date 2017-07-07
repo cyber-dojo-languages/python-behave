@@ -1,6 +1,6 @@
 mkdir steps
 cp *_steps.py steps
 
-behave
+behave --no-color
 
 rm -rf steps
