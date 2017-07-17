@@ -14,5 +14,7 @@
 
   "display_name": "Python, behave",
 
-  "image_name": "cyberdojofoundation/python_behave"
+  "image_name": "cyberdojofoundation/python_behave",
+
+  "runner_choice": "stateless"
 }
