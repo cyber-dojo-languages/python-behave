@@ -6,7 +6,9 @@
     "cyber-dojo.sh"
   ],
 
-  "filename_extension": [".py", ".feature" ],
+  "hidden_filenames": [ "\\.coverage" ],
+
+  "filename_extension": [ ".py", ".feature" ],
 
   "tab_size": 4,
 
