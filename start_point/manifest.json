@@ -1,9 +1,8 @@
 {
   "visible_filenames": [
     "hiker.feature",
-    "hiker_steps.py",
+    "steps/hiker_steps.py",
     "hiker.py",
-    "README",
     "cyber-dojo.sh"
   ],
 
