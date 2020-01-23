@@ -23,6 +23,7 @@ workflows:
   commit:
     jobs:
       - build-publish-trigger:
+          context: cyberdojo-languages-context        
           filters:
             branches:
               only: [ master ]
