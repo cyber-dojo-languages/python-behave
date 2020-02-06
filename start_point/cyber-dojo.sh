@@ -1,7 +1,12 @@
-coverage3 run --source='.' -m behave --no-color
+set -e
 
 REPORT_DIR=${CYBER_DOJO_SANDBOX}/report
-mkdir -p ${REPORT_DIR}
+rm -rf ${REPORT_DIR} || true
+mkdir -p report
+
+coverage3 run \
+  --source=${CYBER_DOJO_SANDBOX} \
+  --module behave --no-color
 
 # https://coverage.readthedocs.io/en/v4.5.x/index.html
 
