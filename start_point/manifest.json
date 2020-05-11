@@ -1,18 +1,15 @@
 {
-  "visible_filenames": [
+  "display_name": "Python, behave",
+  "image_name": "cyberdojofoundation/python_behave",
+  "visible_filenames":
+  [
     "hiker.feature",
     "steps/hiker_steps.py",
     "hiker.py",
     "cyber-dojo.sh"
   ],
-
-  "hidden_filenames": [ "\\.coverage" ],
-
   "filename_extension": [ ".py", ".feature" ],
-
+  "max_seconds": 10,
   "tab_size": 4,
-
-  "display_name": "Python, behave",
-
-  "image_name": "cyberdojofoundation/python_behave"
+  "hidden_filenames": [ "\\.coverage" ]
 }
