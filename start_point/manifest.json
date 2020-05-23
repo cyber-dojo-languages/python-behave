@@ -10,6 +10,5 @@
   ],
   "filename_extension": [ ".py", ".feature" ],
   "max_seconds": 10,
-  "tab_size": 4,
-  "hidden_filenames": [ "\\.coverage" ]
+  "tab_size": 4
 }
