@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build image, test it, push it dockerhub, notify dependents
+          name: Build image, test it, tag it, push to dockerhub
           command: ./pipe_build_up_test.sh
 
 workflows:
