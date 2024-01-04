@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/python:8dd40e1
+FROM cyberdojofoundation/python:1269b9a
 LABEL maintainer=millard.ellingsworth@gmail.com
 
 RUN pip3 install --upgrade behave
