@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/python:1269b9a
+FROM ghcr.io/cyber-dojo-languages/python:0f270d9
 LABEL maintainer=millard.ellingsworth@gmail.com
 
 RUN pip3 install --upgrade behave
