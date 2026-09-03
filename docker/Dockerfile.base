@@ -2,3 +2,10 @@ FROM ghcr.io/cyber-dojo-languages/python:191902b
 LABEL maintainer=millard.ellingsworth@gmail.com
 
 RUN pip3 install --upgrade behave
+
+# A kata's test-run reads a mypy cache warmed here instead of reanalysing
+# typeshed's standard-library stubs in every fresh container. cyber-dojo.sh
+# names this cache through MYPY_CACHE_DIR; mypy's own default sits in the
+# sandbox, which is empty at the start of every run.
+COPY warm_mypy_cache.sh .
+RUN bash ./warm_mypy_cache.sh && rm ./warm_mypy_cache.sh
