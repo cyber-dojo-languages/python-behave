@@ -1,4 +1,4 @@
-FROM ghcr.io/cyber-dojo-languages/python:af23e02
+FROM ghcr.io/cyber-dojo-languages/python:5f93259
 LABEL maintainer=millard.ellingsworth@gmail.com
 
 RUN pip3 install --upgrade behave
@@ -9,3 +9,6 @@ RUN pip3 install --upgrade behave
 # sandbox, which is empty at the start of every run.
 COPY warm_mypy_cache.sh .
 RUN bash ./warm_mypy_cache.sh && rm ./warm_mypy_cache.sh
+
+COPY install.sh .
+RUN ./install.sh && rm ./install.sh
