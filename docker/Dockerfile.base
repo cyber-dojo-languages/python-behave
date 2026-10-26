@@ -1,4 +1,4 @@
-FROM ghcr.io/cyber-dojo-languages/python:5f93259
+FROM ghcr.io/cyber-dojo-languages/python:3e1a093@sha256:dde08a0ea2e5c28ba212fba13c4e9d97d53a1107b86e61d988c3d468857f63f6
 LABEL maintainer=millard.ellingsworth@gmail.com
 
 RUN pip3 install --upgrade behave
